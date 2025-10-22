@@ -12,8 +12,18 @@
 
 // 12] DIScount shop 
 let amount = Number(prompt("enter amout"));
+let discount = 0;
 if (amount >= 0 && amount <=5000){
     console.log( amount,'no discount');
-}else if(amount>=5000 && amount<=7000) {
-    console.log(amount - (Math.floor(5*amount)/100))
+}else if(amount>=5001 && amount<=7000) {
+    discount = 5;
+}else if(amount>=7001 && amount<=9000) {
+    discount = 10;
 }
+else if(amount>=9000) {
+    discount = 20;
+}
+else{
+    console.log('noot a amount');
+}
+console.log(amount - Math.floor((amount*discount)/100));
