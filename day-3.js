@@ -42,16 +42,30 @@
 
 
 // 19]to find factors 
+// let num = Number(prompt('enter a num'));
+// if (isNaN(num)) {
+//     console.log('not a num');
+
+// } else {
+//     let factor = 1;
+//     for (let i = 1; i<=Math.floor(num/2); i++) {
+//         if(num%i === 0){
+//             console.log(i);
+//         }
+//     }    console.log(num);
+
+// }
+
 let num = Number(prompt('enter a num'));
 if (isNaN(num)) {
     console.log('not a num');
 
 } else {
-    let factor = 1;
-    for (let i = 1; i<=Math.floor(num/2); i++) {
+    let isPrime = true;
+    for (let i = 2; i<=Math.floor(num/2); i++) {
         if(num%i === 0){
-            console.log(i);
-        }
-    }    console.log(num);
+            isPrime = false;
+        }break;
+    }    console.log(isPrime);
 
 }
