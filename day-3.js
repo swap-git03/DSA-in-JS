@@ -107,10 +107,35 @@
 
 
 // 23] to ask user values untill he sayshello 
-let user = prompt('enter something');
+// let user = prompt('enter something');
 
-do {
-  console.log(user);
-  user = prompt('enter something');  // ✅ update user each time
-} while (user !== hello);          // ✅ stop when user types "hello"
+// do {
+//   console.log(user);
+//   user = prompt('enter something');  
+// } while (user !== hello);          
 
+
+
+
+// 24] guess the number 
+// Generate random number between 1 and 100
+// let num = Math.floor(Math.random() * 100) + 1;
+
+// let userNum = Number(prompt('Guess a number between 1 and 100'));
+
+// while (userNum !== num) {
+
+//     if (isNaN(userNum) || userNum < 1 || userNum > 100) {
+//         console.log("Enter a valid number between 1 and 100");
+//     } else {
+//         if (userNum > num) {
+//             console.log('Try smaller');
+//         } else if (userNum < num) {
+//             console.log('Try bigger');
+//         }
+//     }
+
+//     userNum = Number(prompt('Guess a number between 1 and 100'));
+// }
+
+// console.log(`Correct number! It was ${num}`);
