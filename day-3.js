@@ -56,16 +56,61 @@
 
 // }
 
-let num = Number(prompt('enter a num'));
-if (isNaN(num)) {
-    console.log('not a num');
 
-} else {
-    let isPrime = true;
-    for (let i = 2; i<=Math.floor(num/2); i++) {
-        if(num%i === 0){
-            isPrime = false;
-        }break;
-    }    console.log(isPrime);
+// 20] to check is the given no. is prime or not
+// let num = Number(prompt('enter a num'));
+// if (isNaN(num)) {
+//     console.log('not a num');
 
-}
+// } else {
+//     let isPrime = true;
+//     for (let i = 2; i<=Math.floor(num/2); i++) {
+//         if(num%i === 0){
+//             isPrime = false;
+//         }break;
+//     }    console.log(isPrime);
+
+// }
+
+// While Loop
+// 21] to find the sum of given digits 
+// let num = Number(prompt('enter a num'));
+// if (isNaN(num)) {
+//     console.log('not a num');
+// }
+// else {
+//     if (num > 0) {
+//         let sum = 0;
+//         while (num > 0) {
+//             let rem = num % 10;
+//             sum = sum + rem;
+//             num = Math.floor(num / 10);
+//         } console.log((sum));
+//     }
+// }
+
+// 22] to reverse a given Number
+// let num = Number(prompt('enter a num'));
+// if (isNaN(num)) {
+//     console.log('not a num');
+// }
+// else {
+//     if (num > 0) {
+//         let rev = 0;
+//         while (num > 0) {
+//             let rem = num % 10;
+//             rev = rev * 10 + rem;
+//             num = Math.floor(num / 10);
+//         } console.log((rev));
+//     }
+// }
+
+
+// 23] to ask user values untill he sayshello 
+let user = prompt('enter something');
+
+do {
+  console.log(user);
+  user = prompt('enter something');  // ✅ update user each time
+} while (user !== hello);          // ✅ stop when user types "hello"
+
